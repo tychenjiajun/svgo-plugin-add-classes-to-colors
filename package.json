@@ -1,7 +1,7 @@
 {
   "name": "svgo-plugin-add-classes-to-colors",
   "version": "1.0.0",
-  "description": "A svgo plugin that add classes to mapping colors.",
+  "description": "SVGO plugin that add corresponding class to element that has specific colors.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -11,9 +11,11 @@
     "url": "git+https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors.git"
   },
   "keywords": [
-    "svgo"
+    "svgo",
+    "svgo-plugin",
+    "svg"
   ],
-  "author": "Jiajun Chen",
+  "author": "Jiajun Chen <tychenjiajun@live.cn> (https://jjchen.cc/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors/issues"

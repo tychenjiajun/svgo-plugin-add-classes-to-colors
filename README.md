@@ -1,5 +1,7 @@
 # svgo-plugin-add-classes-to-colors
 
+Add corresponding class to element that has specific colors.
+
 ## Install
 
 ```bash
@@ -11,6 +13,7 @@ yarn add --dev svgo-plugin-add-classes-to-colors
 ## Usage
 
 ```js
+// svgo.config.js
 const addClassesToColors = require('svgo-plugin-add-classes-to-colors');
 module.exports = {
   plugins: [
