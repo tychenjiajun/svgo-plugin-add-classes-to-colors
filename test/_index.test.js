@@ -5,6 +5,7 @@ const PATH = require("path");
 const EOL = require("os").EOL;
 const regEOL = new RegExp(EOL, "g");
 const regFilename = /^(.*)\.(\d+)\.svg$/;
+const plugin = require("../index.js");
 const { optimize } = require("svgo");
 
 describe("plugins tests", function () {
@@ -27,18 +28,14 @@ describe("plugins tests", function () {
           const test = items.length === 2 ? items[1] : items[0];
           // extract test case
           const [original, should, params] = test.split(/\s*@@@\s*/);
-          const plugin = {
-            name,
-            params: params ? JSON.parse(params) : {},
-          };
           let lastResultData = original;
-          // test plugins idempotence
-          const exclude = ["addAttributesToSVGElement", "convertTransform"];
-          const multipass = exclude.includes(name) ? 1 : 2;
+          const multipass = 2;
           for (let i = 0; i < multipass; i += 1) {
             const result = optimize(lastResultData, {
               path: file,
-              plugins: [plugin],
+              plugins: [
+                { ...plugin, params: params ? JSON.parse(params) : {} },
+              ],
               js2svg: { pretty: true },
             });
             lastResultData = result.data;

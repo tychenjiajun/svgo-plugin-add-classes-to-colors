@@ -1,6 +1,6 @@
 "use strict";
 
-const collections = require("./_collections.js");
+const collections = require("svgo/plugins/_collections");
 
 exports.type = "visitor";
 exports.name = "convertColors";
