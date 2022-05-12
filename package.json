@@ -1,5 +1,5 @@
 {
-  "name": "svgo-plugin-convert-colors-to-classes",
+  "name": "svgo-plugin-add-classes-to-colors",
   "version": "1.0.0",
   "description": "A svgo plugin that add classes to mapping colors.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tychenjiajun/svgo-plugin-convert-colors-to-classes.git"
+    "url": "git+https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors.git"
   },
   "keywords": [
     "svgo"
@@ -16,9 +16,9 @@
   "author": "Jiajun Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tychenjiajun/svgo-plugin-convert-colors-to-classes/issues"
+    "url": "https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors/issues"
   },
-  "homepage": "https://github.com/tychenjiajun/svgo-plugin-convert-colors-to-classes#readme",
+  "homepage": "https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors#readme",
   "devDependencies": {
     "eslint": "^8.15.0",
     "jest": "^28.1.0",

@@ -1,1 +1,1 @@
-# svgo-plugin-convert-colors-to-classes
+# svgo-plugin-add-classes-to-colors

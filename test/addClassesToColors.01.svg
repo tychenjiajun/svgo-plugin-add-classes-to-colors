@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <g color="navy"/>
+    <g color="NAVY"/>
+    <path fill="#000"/>
+    <path fill="navy"/>
+    <path fill="#000" class="existing"/>
+    <g color="#fff"/>
+    <g color="currentColor"/>
+</svg>
+
+@@@
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <g color="navy" class="tone1"/>
+    <g color="NAVY"/>
+    <path fill="#000" class="tone2"/>
+    <path fill="navy" class="tone1"/>
+    <path fill="#000" class="existing tone2"/>
+    <g color="#fff"/>
+    <g color="currentColor" class="tone3"/>
+</svg>
+
+@@@
+
+{ "mapping": { "navy": "tone1", "#000": "tone2", "currentColor": "tone3" } }
