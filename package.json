@@ -1,6 +1,6 @@
 {
   "name": "svgo-plugin-add-classes-to-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SVGO plugin that add corresponding class to element that has specific colors.",
   "main": "index.js",
   "scripts": {

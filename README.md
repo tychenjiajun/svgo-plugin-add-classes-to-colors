@@ -1,5 +1,8 @@
 # svgo-plugin-add-classes-to-colors
 
+[![GitHub license](https://img.shields.io/github/license/tychenjiajun/svgo-plugin-add-classes-to-colors)](https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/dw/svgo-plugin-add-classes-to-colors)](https://www.npmjs.com/package/svgo-plugin-add-classes-to-colors)
+
 Add corresponding class to element that has specific colors.
 
 ## Install
