@@ -24,6 +24,7 @@ module.exports = {
       ...addClassesToColors,
       params: {
         mapping: {
+          // [color]: className
           'currentColor': 'tone1',
           '#fff': 'tone2',
         }
@@ -49,6 +50,29 @@ to
     <g color="#fff" class="tone2"/>
     <g color="currentColor" class="tone1"/>
 </svg>
+```
+
+## More Configs Example
+
+```js
+// svgo.config.js
+const addClassesToColors = require('svgo-plugin-add-classes-to-colors');
+module.exports = {
+  plugins: [
+    {
+      ...addClassesToColors,
+      params: {
+        mapping: {
+          // [color attribute]: { [color]: className }
+          fill: {
+            '#fff': 'fill--tone1',
+          },
+          stroke: 'fill' // will add class `fill--tone1` to stroke="#fff"
+        }
+      }
+    }
+  ],
+};
 ```
 
 ## Why

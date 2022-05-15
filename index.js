@@ -8,6 +8,17 @@ exports.active = true;
 exports.description =
   "Add corresponding class to element that has specific colors";
 
+function findMapping(mapping, name) {
+  const result = mapping[name];
+  if (typeof result === "object") {
+    return result;
+  }
+  if (typeof result !== "string" || !collections.colorsProps.includes(result)) {
+    return {};
+  }
+  return findMapping(mapping, result);
+}
+
 /**
  * Add corresponding class to element that has specific colors.
  *
@@ -28,6 +39,10 @@ exports.fn = (_root, params) => {
           if (collections.colorsProps.includes(name)) {
             const mappedClass = mapping[value];
             if (typeof mappedClass === "string") classes.add(mappedClass);
+            else {
+              const mappedClass = findMapping(mapping, name)[value];
+              if (typeof mappedClass === "string") classes.add(mappedClass);
+            }
           }
         }
         if (classes.size > 0)
