@@ -8,6 +8,8 @@ exports.active = true;
 exports.description =
   "Add corresponding class to element that has specific colors";
 
+const regHEX = /^#([a-fA-F0-9]){3,6}$/;
+
 function findMapping(mapping, name) {
   const result = mapping[name];
   if (typeof result === "object") {
@@ -35,8 +37,9 @@ exports.fn = (_root, params) => {
     element: {
       enter: (node) => {
         const classes = new Set(node.attributes.class?.split(" "));
-        for (const [name, value] of Object.entries(node.attributes)) {
+        for (const [name, oriVal] of Object.entries(node.attributes)) {
           if (collections.colorsProps.includes(name)) {
+            const value = oriVal.match(regHEX) != null ? oriVal.toLowerCase() : oriVal;
             const mappedClass = mapping[value];
             if (typeof mappedClass === "string") classes.add(mappedClass);
             else {
