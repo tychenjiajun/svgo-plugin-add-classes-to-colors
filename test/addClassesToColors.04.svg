@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path fill="#fff"/>
+    <path fill="#FFF" class="existing"/>
+</svg>
+
+@@@
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path fill="#fff" class="tone1"/>
+    <path fill="#FFF" class="existing tone1"/>
+</svg>
+
+@@@
+
+{ "mapping": { "#fff": "tone1" } }
