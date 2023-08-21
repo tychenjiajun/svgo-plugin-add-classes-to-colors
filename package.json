@@ -23,7 +23,7 @@
   "homepage": "https://github.com/tychenjiajun/svgo-plugin-add-classes-to-colors#readme",
   "devDependencies": {
     "eslint": "^8.47.0",
-    "jest": "^29.6.2",
+    "jest": "^29.6.3",
     "prettier": "^3.0.2"
   },
   "peerDependencies": {
