@@ -27,9 +27,9 @@
     "prettier": "^3.5.2"
   },
   "peerDependencies": {
-    "svgo": "^3.3.0"
+    "svgo": "^4.0.1"
   },
   "dependencies": {
-    "svgo": "^3.3.0"
+    "svgo": "^4.0.1"
   }
 }
